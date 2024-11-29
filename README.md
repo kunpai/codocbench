@@ -81,7 +81,7 @@ To extract your own dataset, follow these steps:
     NOTE: This script sets up a virtual environment and installs the required dependencies. If you prefer to use your own environment, you can install the dependencies manually by running:
 
     ``` bash
-    pip install -r requirements.txt
+    pip install -r requirements
     ```
 
     (Be sure to give the appropriate permissions to the script by running `chmod +x setup.sh`)
