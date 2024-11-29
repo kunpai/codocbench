@@ -1,10 +1,16 @@
-# CoDocBench: : A Dataset for Code-Documentation Alignment in Software Maintenance
+# CoDocBench: A Dataset for Code-Documentation Alignment in Software Maintenance
 
 This repository contains the CoDocBench dataset, a dataset for code-documentation alignment in software maintenance. The dataset is composed of 4,573 code-documentation pairs extracted from 200 open-source Python projects.
 
-## Setup
+## Dataset Description
 
-To use the CoDocBench dataset mentioned in the paper, you can find the dataset in the `dataset` folder. The dataset is in JSONL format, and each line contains a JSON file with the following fields:
+To use the CoDocBench dataset mentioned in the paper, you can find the dataset in the `dataset` folder. The folder contains the following files:
+
+1. `codocbench.jsonl`: The main dataset file containing 4573 code-documentation pairs.
+2. `test.jsonl`: The test dataset file containing 2273 code-documentation pairs from a random selection of 50% of the projects.
+3. `train.jsonl`: The training dataset file containing 2300 code-documentation pairs from the remaining 50% of the projects.
+
+The dataset is in JSONL format, and each line contains a JSON file with the following fields:
 
 ``` json
 {
