@@ -94,7 +94,7 @@ To extract your own dataset, follow these steps:
 
 4. To extract your own dataset, you can use the `parse.py` script. The script has a few variants that you can use to customize the extraction process.
 
-    1. Variant 1: Extracting from a single project
+    1. *Variant 1: Extracting from a single project*
 
         To extract code-documentation pairs from a single project, you can use the following command:
 
@@ -104,7 +104,7 @@ To extract your own dataset, follow these steps:
 
         where `owner` is the owner of the repository and `repo` is the name of the repository.
 
-    2. Variant 2: Extracting from multiple projects
+    2. *Variant 2: Extracting from multiple projects*
 
         To extract code-documentation pairs from multiple projects, you can use the following command:
 
@@ -116,7 +116,7 @@ To extract your own dataset, follow these steps:
 
         The `projects.csv` file in this repository contains the owner and repository name of the projects used in the CoDocBench dataset.
 
-    3. Variant 3: Extracting from a specific file
+    3. *Variant 3: Extracting from a specific file*
 
         To extract code-documentation pairs from a specific file, you can use the following command:
 
