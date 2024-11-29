@@ -131,3 +131,31 @@ To extract your own dataset, follow these steps:
 5. The extracted code-documentation pairs will be saved in the `differ_files/` folder in JSONL format. The file name will be in the format `codocbench.jsonl`.
 
 The `parse.py` script also records solitary docstring changes and solitary code changes in the `differ_files/` folder. The file name will be in the format `combined_diff_mapping_docstring_.jsonl` and `combined_diff_mapping_code_.jsonl`, respectively. However, these are not post-processed and may contain false positives.
+
+## Examples
+
+Example scripts of using the dataset are provided in the `examples` folder. The scripts demonstrate how to load the dataset and use it for various tasks.
+
+For most of the examples, you can run the script using the following command:
+
+``` bash
+python examples/<FILENAME>.py <PATH_TO_DATASET>
+```
+
+where `<FILENAME>` is the name of the script and `<PATH_TO_DATASET>` is the path to the dataset file.
+
+In case of the 3-shot learning examples, you can run the script using the following command:
+
+``` bash
+python examples/<FILENAME>.py <PATH_TO_DATASET> <PATH_TO_TRAIN_DATASET>
+```
+
+where `<FILENAME>` is the name of the script, `<PATH_TO_DATASET>` is the path to the dataset file, and `<PATH_TO_TRAIN_DATASET>` is the path to the training dataset file.
+
+All these files load `meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo` as the default model. You can change the model by running the script with the `--model` flag:
+
+``` bash
+python examples/<FILENAME>.py <PATH_TO_DATASET> --model=<MODEL_NAME>
+```
+
+where `<MODEL_NAME>` is the name of the model you want to use.
