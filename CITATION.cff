@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Pai"
+  given-names: "Kunal"
+  orcid: "https://orcid.org/0009-0003-0675-7135"
+- family-names: "Devanbu"
+  given-names: "Premkumar"
+  orcid: "https://orcid.org/0000-0002-4346-5276"
+- family-names: "Ahmed"
+  given-names: "Toufique"
+  orcid: "https://orcid.org/0000-0002-4427-1350"
+title: "CoDocBench: A Dataset for Code-Documentation Alignment in Software Maintenance"
+version: 1.0
+doi: 10.5281/zenodo.14251622
+date-released: 2024-11-30
+url: "https://github.com/kunpai/codocbench"

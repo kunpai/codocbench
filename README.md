@@ -2,6 +2,8 @@
 
 This repository contains the CoDocBench dataset, a dataset for code-documentation alignment in software maintenance. The dataset is composed of 4,573 code-documentation pairs extracted from 200 open-source Python projects.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14251623.svg)](https://doi.org/10.5281/zenodo.14251623)
+
 ## Dataset Description
 
 To use the CoDocBench dataset mentioned in the paper, you can find the dataset in the `dataset` folder. The folder contains the following files:
