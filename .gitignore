@@ -3,3 +3,4 @@ __pycache__/
 tmp/
 .env
 codocbench-env/
+.DS_Store
