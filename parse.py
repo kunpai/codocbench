@@ -492,6 +492,9 @@ def main():
     # rename the fixed file to codocbench.jsonl
     os.system('mv differ_files/fixed_combined_diff_mapping_differ_.jsonl differ_files/codocbench.jsonl')
 
+    # remove the temporary files
+    delete_repo_folders()
+
 def process_projects():
     """
     In case no arguments are provided, this function processes all the projects in the projects.csv file
@@ -539,6 +542,17 @@ def process_single_project():
         get_commits(username, repository, filename, repo_path)
     shutil.rmtree(repo_path, ignore_errors=True)
 
+def delete_repo_folders():
+    """
+    Deletes all folders in the current directory that start with '<username>_<repository>'.
+    """
+    for folder in os.listdir('.'):  # List all items in the current directory
+        if os.path.isdir(folder) and '_' in folder and 'differ' not in folder:  # Check if it is a folder and contains '_'
+            parts = folder.split('_')
+            if len(parts) >= 2:  # Ensure the name has at least two parts
+                print(f"Deleting folder: {folder}")
+                shutil.rmtree(folder, ignore_errors=True)
+    print("Deletion process completed.")
 
 def get_python_files(repo_path):
     """

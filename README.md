@@ -80,7 +80,15 @@ To extract your own dataset, follow these steps:
     ./setup.sh
     ```
 
-    NOTE: This script sets up a virtual environment and installs the required dependencies. If you prefer to use your own environment, you can install the dependencies manually by running:
+    NOTE: This script sets up a virtual environment and installs the required dependencies. It defaults to Python version 3.13.
+
+    If you have a different Python version:
+    ``` bash
+    ./setup.sh <PYTHON_VERSION>
+    ```
+    where `<PYTHON_VERSION>` is the version of Python you want to use.
+    
+    If you prefer to use your own environment, you can install the dependencies manually by running:
 
     ``` bash
     pip install -r requirements
