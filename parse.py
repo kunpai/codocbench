@@ -10,6 +10,7 @@ from util.whitespace_only import remove_all_whitespace, remove_all_whitespace_pa
 from util.assoc_fixer import assoc_fixer
 from util.diff_fixer import process_diffs
 from util.extract_common_info import common_info
+from util.lines import fix_docstring_code_lines
 
 last_commit = None
 
@@ -491,6 +492,8 @@ def main():
 
     # rename the fixed file to codocbench.jsonl
     os.system('mv differ_files/fixed_combined_diff_mapping_differ_.jsonl differ_files/codocbench.jsonl')
+
+    fix_docstring_code_lines('differ_files/codocbench.jsonl')
 
     # remove the temporary files
     delete_repo_folders()
