@@ -94,8 +94,11 @@ def extract_function_data(file_path, function_name):
 
 
 def fix_docstring_code_lines(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
+    input_file = file_path
+    with open(input_file, 'r', encoding='utf-8') as f:
         data = [json.loads(line) for line in f]
+
+    print(f"Processing {len(data)} entries from {input_file}")
 
     new_data = []
     errors = []
@@ -172,7 +175,8 @@ def fix_docstring_code_lines(file_path):
                     pass
 
     # Write the updated data back to a new JSONL file
-    output_file = file_path
+    output_file = input_file
+    print(f"Writing updated data to {output_file}")
     with open(output_file, 'w', encoding='utf-8') as f:
         for entry in new_data:
             f.write(json.dumps(entry) + '\n')
