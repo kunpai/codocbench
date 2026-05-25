@@ -169,3 +169,20 @@ python examples/<FILENAME>.py <PATH_TO_DATASET> --model=<MODEL_NAME>
 ```
 
 where `<MODEL_NAME>` is the name of the model you want to use.
+
+## Citation
+
+If you use this repository for your research, please cite the following paper:
+
+```bibtex
+@INPROCEEDINGS{codocbench,
+  author={Pai, Kunal and Devanbu, Premkumar and Ahmed, Toufique},
+  booktitle={2025 IEEE/ACM 22nd International Conference on Mining Software Repositories (MSR)}, 
+  title={CoDocBench: A Dataset for Code-Documentation Alignment in Software Maintenance}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={451-455},
+  keywords={Software maintenance;Codes;Source coding;Natural languages;Documentation;Data mining;Artificial intelligence;Software development management;llms;code generation;docstring generation},
+  doi={10.1109/MSR66628.2025.00077}}
+```
